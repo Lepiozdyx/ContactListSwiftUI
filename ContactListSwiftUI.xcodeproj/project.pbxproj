@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA10A3382A45DFDF00E1A168 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA10A3372A45DFDF00E1A168 /* DataStore.swift */; };
+		FA10A33A2A45DFE900E1A168 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA10A3392A45DFE900E1A168 /* Person.swift */; };
+		FA10A3402A45E76E00E1A168 /* ContactListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA10A33F2A45E76E00E1A168 /* ContactListView.swift */; };
+		FA10A3422A45E9D000E1A168 /* SectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA10A3412A45E9D000E1A168 /* SectionView.swift */; };
+		FA10A3442A460CF900E1A168 /* ContactDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA10A3432A460CF900E1A168 /* ContactDetailsView.swift */; };
 		FA78AAD62A4398F2005A7609 /* ContactListSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA78AAD52A4398F2005A7609 /* ContactListSwiftUIApp.swift */; };
 		FA78AAD82A4398F2005A7609 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA78AAD72A4398F2005A7609 /* ContentView.swift */; };
 		FA78AADA2A4398F3005A7609 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA78AAD92A4398F3005A7609 /* Assets.xcassets */; };
@@ -14,6 +19,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FA10A3372A45DFDF00E1A168 /* DataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
+		FA10A3392A45DFE900E1A168 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		FA10A33F2A45E76E00E1A168 /* ContactListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListView.swift; sourceTree = "<group>"; };
+		FA10A3412A45E9D000E1A168 /* SectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionView.swift; sourceTree = "<group>"; };
+		FA10A3432A460CF900E1A168 /* ContactDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailsView.swift; sourceTree = "<group>"; };
 		FA78AAD22A4398F2005A7609 /* ContactListSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContactListSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA78AAD52A4398F2005A7609 /* ContactListSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListSwiftUIApp.swift; sourceTree = "<group>"; };
 		FA78AAD72A4398F2005A7609 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -32,6 +42,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FA10A33B2A45E04800E1A168 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FA10A3392A45DFE900E1A168 /* Person.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FA10A33C2A45E05400E1A168 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				FA10A3372A45DFDF00E1A168 /* DataStore.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		FA10A33D2A45E06000E1A168 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				FA78AAD52A4398F2005A7609 /* ContactListSwiftUIApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		FA10A33E2A45E06D00E1A168 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FA78AAD72A4398F2005A7609 /* ContentView.swift */,
+				FA10A33F2A45E76E00E1A168 /* ContactListView.swift */,
+				FA10A3432A460CF900E1A168 /* ContactDetailsView.swift */,
+				FA10A3412A45E9D000E1A168 /* SectionView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		FA78AAC92A4398F1005A7609 = {
 			isa = PBXGroup;
 			children = (
@@ -51,8 +96,10 @@
 		FA78AAD42A4398F2005A7609 /* ContactListSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				FA78AAD52A4398F2005A7609 /* ContactListSwiftUIApp.swift */,
-				FA78AAD72A4398F2005A7609 /* ContentView.swift */,
+				FA10A33D2A45E06000E1A168 /* App */,
+				FA10A33B2A45E04800E1A168 /* Models */,
+				FA10A33C2A45E05400E1A168 /* Services */,
+				FA10A33E2A45E06D00E1A168 /* Views */,
 				FA78AAD92A4398F3005A7609 /* Assets.xcassets */,
 				FA78AADB2A4398F3005A7609 /* Preview Content */,
 			);
@@ -138,6 +185,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA78AAD82A4398F2005A7609 /* ContentView.swift in Sources */,
+				FA10A3382A45DFDF00E1A168 /* DataStore.swift in Sources */,
+				FA10A3422A45E9D000E1A168 /* SectionView.swift in Sources */,
+				FA10A3442A460CF900E1A168 /* ContactDetailsView.swift in Sources */,
+				FA10A3402A45E76E00E1A168 /* ContactListView.swift in Sources */,
+				FA10A33A2A45DFE900E1A168 /* Person.swift in Sources */,
 				FA78AAD62A4398F2005A7609 /* ContactListSwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -273,8 +325,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -282,9 +334,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Zhulai-Alex.ContactListSwiftUI";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -302,8 +357,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -311,9 +366,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Zhulai-Alex.ContactListSwiftUI";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
