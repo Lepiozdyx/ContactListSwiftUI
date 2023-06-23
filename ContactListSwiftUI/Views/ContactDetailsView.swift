@@ -28,7 +28,7 @@ struct ContactDetailsView: View {
 
 struct ContactDetailsView_Previews: PreviewProvider {
     static var previews: some View {
-        ContactDetailsView(person: Person(name: "", surname: "", phone: "3333-333", email: "luis@gmail.com ", icon: ""))
+        ContactDetailsView(person: Person(name: "", surname: "", phone: "3333-333", email: "luis@gmail.com "))
     }
 }
 

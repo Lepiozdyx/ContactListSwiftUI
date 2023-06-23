@@ -16,7 +16,5 @@ final class DataStore {
 
     let emails = ["mercedes@example.com", "mercedes-2@example.com", "redbull@example.com", "redbull-2@example.com", "mclaren@example.com", "mclaren-2@example.com", "ferrari@example.com", "ferrari-2@example.com", "alpine@example.com", "alpine-2@example.com", "astonmartin@example.com", "astonmartin-2@example.com", "alfaromeo@example.com", "alfaromeo-2@example.com", "alphatauri@example.com", "alphatauri-2@example.com", "williams@example.com", "williams-2@example.com", "haas@example.com", "haas-2@example.com"]
 
-    let icons = ["Hamilton", "Verstappen", "Bottas", "Norris", "Perez", "Ricciardo", "Leclerc", "Gasly", "Ocon", "Sainz", "Stroll", "Alonso", "Vettel", "Tsunoda", "Russell", "Raikkonen", "Giovinazzi", "Schumacher", "Mazepin", "Latifi"]
-
     private init() {}
 }
