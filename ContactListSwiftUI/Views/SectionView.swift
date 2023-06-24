@@ -12,10 +12,10 @@ struct SectionView: View {
     
     var body: some View {
         NavigationStack {
-            List(persons, id: \.fullName) { person in
+            List(persons) { person in
                 Section(person.fullName) {
-                    RowView(image: "phone", text: person.phone)
-                    RowView(image: "tray", text: person.email)
+                    Label(person.phone, systemImage: "phone")
+                    Label(person.email, systemImage: "tray")
                 }
             }
             .listStyle(.plain)
