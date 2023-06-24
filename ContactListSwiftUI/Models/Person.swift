@@ -5,11 +5,14 @@
 //  Created by Alex on 18.04.2023.
 //
 
-struct Person {
+import Foundation
+
+struct Person: Identifiable {
     let name: String
     let surname: String
     let phone: String
     let email: String
+    let id = UUID()
     
     var fullName: String {
         "\(name) \(surname)"

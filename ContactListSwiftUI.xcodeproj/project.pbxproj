@@ -96,11 +96,11 @@
 		FA78AAD42A4398F2005A7609 /* ContactListSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				FA78AAD92A4398F3005A7609 /* Assets.xcassets */,
 				FA10A33D2A45E06000E1A168 /* App */,
 				FA10A33B2A45E04800E1A168 /* Models */,
 				FA10A33C2A45E05400E1A168 /* Services */,
 				FA10A33E2A45E06D00E1A168 /* Views */,
-				FA78AAD92A4398F3005A7609 /* Assets.xcassets */,
 				FA78AADB2A4398F3005A7609 /* Preview Content */,
 			);
 			path = ContactListSwiftUI;
