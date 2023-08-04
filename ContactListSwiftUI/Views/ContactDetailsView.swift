@@ -20,7 +20,7 @@ struct ContactDetailsView: View {
                 Spacer()
             }
             Label(person.phone, systemImage: "phone")
-            Label(person.email, systemImage: "tray")
+            Label(person.email, systemImage: "envelope")
         }
         .navigationTitle(person.fullName)
     }

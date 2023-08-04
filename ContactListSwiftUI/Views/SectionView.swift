@@ -15,7 +15,7 @@ struct SectionView: View {
             List(persons) { person in
                 Section(person.fullName) {
                     Label(person.phone, systemImage: "phone")
-                    Label(person.email, systemImage: "tray")
+                    Label(person.email, systemImage: "envelope")
                 }
             }
             .listStyle(.plain)

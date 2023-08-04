@@ -14,13 +14,11 @@ struct ContentView: View {
         TabView {
             ContactListView(persons: persons)
                 .tabItem {
-                    Image(systemName: "person.2")
-                    Text("Contacts")
+                    Label("Contacts", systemImage: "person.2")
                 }
             SectionView(persons: persons)
                 .tabItem {
-                    Image(systemName: "phone")
-                    Text("Numbers")
+                    Label("Numbers", systemImage: "phone")
                 }
         }
     }
