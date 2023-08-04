@@ -16,6 +16,7 @@
 		FA78AAD82A4398F2005A7609 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA78AAD72A4398F2005A7609 /* ContentView.swift */; };
 		FA78AADA2A4398F3005A7609 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA78AAD92A4398F3005A7609 /* Assets.xcassets */; };
 		FA78AADD2A4398F3005A7609 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA78AADC2A4398F3005A7609 /* Preview Assets.xcassets */; };
+		FAC018062A7D62FA0086FE8A /* ContactListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC018052A7D62FA0086FE8A /* ContactListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		FA78AAD72A4398F2005A7609 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FA78AAD92A4398F3005A7609 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA78AADC2A4398F3005A7609 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FAC018052A7D62FA0086FE8A /* ContactListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 				FA10A33B2A45E04800E1A168 /* Models */,
 				FA10A33C2A45E05400E1A168 /* Services */,
 				FA10A33E2A45E06D00E1A168 /* Views */,
+				FAC018072A7D63000086FE8A /* ViewModels */,
 				FA78AADB2A4398F3005A7609 /* Preview Content */,
 			);
 			path = ContactListSwiftUI;
@@ -112,6 +115,14 @@
 				FA78AADC2A4398F3005A7609 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FAC018072A7D63000086FE8A /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				FAC018052A7D62FA0086FE8A /* ContactListViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,6 +196,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA78AAD82A4398F2005A7609 /* ContentView.swift in Sources */,
+				FAC018062A7D62FA0086FE8A /* ContactListViewModel.swift in Sources */,
 				FA10A3382A45DFDF00E1A168 /* DataStore.swift in Sources */,
 				FA10A3422A45E9D000E1A168 /* SectionView.swift in Sources */,
 				FA10A3442A460CF900E1A168 /* ContactDetailsView.swift in Sources */,
