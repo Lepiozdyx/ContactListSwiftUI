@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    private let persons = Person.getRandomPersons()
+    @StateObject private var persons = ContactListViewModel()
     
     var body: some View {
         TabView {

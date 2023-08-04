@@ -8,13 +8,19 @@
 import SwiftUI
 
 struct ContactListView: View {
-    let persons: [Person]
+    @ObservedObject var persons: ContactListViewModel
     
     var body: some View {
         NavigationStack {
-            List(persons) { person in
-                NavigationLink(destination: ContactDetailsView(person: person)) {
-                    Text(person.fullName)
+            List {
+                ForEach(persons.sectionTitles, id: \.self) { sectionTitle in
+                    Section(sectionTitle) {
+                        ForEach(persons.sortedPersons[sectionTitle] ?? []) { person in
+                            NavigationLink(destination: ContactDetailsView(person: person)) {
+                                Text(person.fullName)
+                            }
+                        }
+                    }
                 }
             }
             .listStyle(.plain)
@@ -25,6 +31,6 @@ struct ContactListView: View {
 
 struct HomeScreenView_Previews: PreviewProvider {
     static var previews: some View {
-        ContactListView(persons: Person.getRandomPersons())
+        ContactListView(persons: ContactListViewModel())
     }
 }

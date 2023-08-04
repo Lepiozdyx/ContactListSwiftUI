@@ -14,8 +14,10 @@ struct ContactDetailsView: View {
         List {
             HStack {
                 Spacer()
-                Image(systemName: "person")
+                Image(systemName: "person.fill")
                     .resizable()
+                    .foregroundColor(.accentColor)
+                    .opacity(0.5)
                     .frame(width: 150, height: 150)
                 Spacer()
             }

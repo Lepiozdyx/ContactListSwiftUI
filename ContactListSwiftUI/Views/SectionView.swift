@@ -8,11 +8,11 @@
 import SwiftUI
 
 struct SectionView: View {
-    let persons: [Person]
+    @ObservedObject var persons: ContactListViewModel
     
     var body: some View {
         NavigationStack {
-            List(persons) { person in
+            List(persons.allPersons) { person in
                 Section(person.fullName) {
                     Label(person.phone, systemImage: "phone")
                     Label(person.email, systemImage: "envelope")
@@ -26,6 +26,6 @@ struct SectionView: View {
 
 struct SectionView_Previews: PreviewProvider {
     static var previews: some View {
-        SectionView(persons: Person.getRandomPersons())
+        SectionView(persons: ContactListViewModel())
     }
 }
