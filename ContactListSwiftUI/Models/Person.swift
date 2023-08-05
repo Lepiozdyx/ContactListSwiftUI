@@ -12,6 +12,7 @@ struct Person: Identifiable {
     let surname: String
     let phone: String
     let email: String
+    let icon: String
     let id = UUID()
     
     var fullName: String {
@@ -25,13 +26,15 @@ struct Person: Identifiable {
         let surnames = DataStore.shared.surnames.shuffled()
         let phones = DataStore.shared.phones.shuffled()
         let emails = DataStore.shared.emails.shuffled()
+        let icons = DataStore.shared.icons.shuffled()
         
         for index in 0..<names.count {
             let person = Person(
                 name: names[index],
                 surname: surnames[index],
                 phone: phones[index],
-                email: emails[index]
+                email: emails[index],
+                icon: icons[index]
             )
             
             uniquePersons.append(person)

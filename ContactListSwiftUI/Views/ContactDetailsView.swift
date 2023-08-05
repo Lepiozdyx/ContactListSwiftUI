@@ -14,11 +14,11 @@ struct ContactDetailsView: View {
         List {
             HStack {
                 Spacer()
-                Image(systemName: "person.fill")
+                Image(person.icon)
                     .resizable()
-                    .foregroundColor(.accentColor)
-                    .opacity(0.5)
-                    .frame(width: 150, height: 150)
+                    .aspectRatio(contentMode: .fill)
+                    .frame(width: 200, height: 200)
+            
                 Spacer()
             }
             Label(person.phone, systemImage: "phone")
