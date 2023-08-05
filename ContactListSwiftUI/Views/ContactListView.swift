@@ -13,10 +13,12 @@ struct ContactListView: View {
     var body: some View {
         NavigationStack {
             List {
-                ForEach(persons.sectionTitles, id: \.self) { sectionTitle in
+                ForEach(persons.filteredSectionTitles, id: \.self) { sectionTitle in
                     Section(sectionTitle) {
-                        ForEach(persons.sortedPersons[sectionTitle] ?? []) { person in
-                            NavigationLink(destination: ContactDetailsView(person: person)) {
+                        ForEach(persons.filteredPerson[sectionTitle] ?? []) { person in
+                            NavigationLink(
+                                destination: ContactDetailsView(person: person)
+                            ) {
                                 Text(person.fullName)
                             }
                         }
@@ -25,6 +27,7 @@ struct ContactListView: View {
             }
             .listStyle(.plain)
             .navigationTitle("Contact List")
+            .searchable(text: $persons.searchText, prompt: "Search..")
         }
     }
 }
