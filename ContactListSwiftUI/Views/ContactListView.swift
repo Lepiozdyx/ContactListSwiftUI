@@ -26,7 +26,7 @@ struct ContactListView: View {
                 }
             }
             .listStyle(.plain)
-            .navigationTitle("Contact List")
+            .navigationTitle("Pilot List")
             .searchable(text: $persons.searchText, prompt: "Search..")
         }
     }

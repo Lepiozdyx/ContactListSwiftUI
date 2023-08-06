@@ -14,12 +14,12 @@ struct SectionView: View {
         NavigationStack {
             List(persons.allPersons) { person in
                 Section(person.fullName) {
-                    Label(person.phone, systemImage: "phone")
+                    Label(person.team, systemImage: "flag.checkered.2.crossed")
                     Label(person.email, systemImage: "envelope")
                 }
             }
             .listStyle(.plain)
-            .navigationTitle("Contact List")
+            .navigationTitle("General")
         }
     }
 }
