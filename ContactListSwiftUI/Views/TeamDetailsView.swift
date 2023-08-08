@@ -18,7 +18,7 @@ struct TeamDetailsView: View {
                     .resizable()
                     .aspectRatio(contentMode: .fill)
                     .cornerRadius(20)
-                    .frame(width: 200, height: 150)
+                    .frame(width: 200)
                 Spacer()
             }
             Text("Head: \(team.head)")
