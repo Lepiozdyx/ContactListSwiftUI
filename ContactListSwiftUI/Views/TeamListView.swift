@@ -9,21 +9,29 @@ import SwiftUI
 
 struct TeamListView: View {
     private let teams = Team.getTeam()
+    private let columns = [GridItem()]
     
     var body: some View {
         NavigationStack {
-            List(teams) { team in
-                NavigationLink(destination: TeamDetailsView(team: team)) {
-                    Image(team.logo)
-                        .resizable()
-                        .aspectRatio(contentMode: .fill)
-                        .frame(width: 60, height: 38)
-                        .clipShape(RoundedRectangle(cornerRadius: 10))
-                        .overlay {
-                            RoundedRectangle(cornerRadius: 10)
-                                .stroke(.gray, lineWidth: 1)
+            ScrollView {
+                LazyVGrid(columns: columns) {
+                    ForEach(teams) { team in
+                        NavigationLink(destination: TeamDetailsView(team: team)) {
+                            VStack {
+                                Image(team.logo)
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fill)
+                                    .frame(width: 250)
+                                    .clipShape(RoundedRectangle(cornerRadius: 10))
+                                    .overlay {
+                                        RoundedRectangle(cornerRadius: 10)
+                                            .stroke(.gray, lineWidth: 1)
+                                }
+                                Text(team.name)
+                                    .font(.title)
+                            }
                         }
-                    Text(team.name)
+                    }
                 }
             }
             .listStyle(.plain)
