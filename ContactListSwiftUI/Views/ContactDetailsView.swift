@@ -21,6 +21,7 @@ struct ContactDetailsView: View {
             
                 Spacer()
             }
+            Label(person.number, systemImage: "numbersign")
             Label(person.team, systemImage: "flag.checkered.2.crossed")
             Label(person.email, systemImage: "envelope")
         }

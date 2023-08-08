@@ -16,6 +16,10 @@ struct ContentView: View {
                 .tabItem {
                     Label("Pilots", systemImage: "person.3.sequence.fill")
                 }
+            TeamListView()
+                .tabItem {
+                    Label("Teams", systemImage: "flag.checkered.2.crossed")
+                }
             SectionView(persons: persons)
                 .tabItem {
                     Label("General", systemImage: "person.crop.rectangle.stack.fill")

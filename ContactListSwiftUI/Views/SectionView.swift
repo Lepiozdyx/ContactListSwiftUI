@@ -14,6 +14,7 @@ struct SectionView: View {
         NavigationStack {
             List(persons.allPersons) { person in
                 Section(person.fullName) {
+                    Label(person.number, systemImage: "numbersign")
                     Label(person.team, systemImage: "flag.checkered.2.crossed")
                     Label(person.email, systemImage: "envelope")
                 }
