@@ -29,6 +29,7 @@ struct TeamListView: View {
                                 }
                                 Text(team.name)
                                     .font(.title)
+                                    .padding(.bottom, 20)
                             }
                         }
                     }
